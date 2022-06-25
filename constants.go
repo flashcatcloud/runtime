@@ -38,6 +38,8 @@ const (
 	XMLMime = "application/xml"
 	// TextMime the text mime type
 	TextMime = "text/plain"
+	// StarMime the text mime type
+	StartMime = "text/*"
 	// HTMLMime the html mime type
 	HTMLMime = "text/html"
 	// CSVMime the csv mime type

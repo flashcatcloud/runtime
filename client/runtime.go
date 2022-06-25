@@ -251,6 +251,7 @@ func New(host, basePath string, schemes []string) *Runtime {
 		runtime.XMLMime:     runtime.XMLConsumer(),
 		runtime.TextMime:    runtime.TextConsumer(),
 		runtime.HTMLMime:    runtime.TextConsumer(),
+		runtime.StartMime:   runtime.TextConsumer(),
 		runtime.CSVMime:     runtime.CSVConsumer(),
 		runtime.DefaultMime: runtime.ByteStreamConsumer(),
 	}
@@ -260,6 +261,7 @@ func New(host, basePath string, schemes []string) *Runtime {
 		runtime.XMLMime:     runtime.XMLProducer(),
 		runtime.TextMime:    runtime.TextProducer(),
 		runtime.HTMLMime:    runtime.TextProducer(),
+		runtime.StartMime:   runtime.TextProducer(),
 		runtime.CSVMime:     runtime.CSVProducer(),
 		runtime.DefaultMime: runtime.ByteStreamProducer(),
 	}
